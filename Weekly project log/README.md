@@ -6,4 +6,4 @@ This folder contains my weekly project log and accountability record for the ECS
 
 ## Table of Contents
 
-- [Week 1](Week1.md) — Limited remote participation while finishing my Spring/Summer co-op, confirmation of the bird-feeder project, and preliminary discussions of the team contract and stakeholder email.
+- [Week 1](Week1.md) — Limited participation while finishing my Spring/Summer co-op, confirmation of the bird-feeder project, preliminary contract and email discussions, and documentation of the stakeholder email sent during Week 2.
