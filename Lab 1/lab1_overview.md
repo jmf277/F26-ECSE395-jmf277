@@ -23,7 +23,7 @@ The purpose of Lab 1 was to become familiar with **Markdown documentation** and 
 
 ### Repository
 
-My course repository is [F26-ECSE395-jmf277](https://github.com/josephfalken/F26-ECSE395-jmf277).
+My course repository is [F26-ECSE395-jmf277](https://github.com/jmf277/F26-ECSE395-jmf277).
 
 **Git** tracks changes in my local repository, while **GitHub** hosts the remote repository. I used *Visual Studio Code* to edit my Markdown files.
 
