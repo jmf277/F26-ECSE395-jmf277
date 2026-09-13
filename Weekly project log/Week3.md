@@ -210,7 +210,7 @@ I will send a brief thank-you in response to the feeder link from gifts.com, ack
 
 ### 6. Follow-Up
 
-- **2026-09-11 — Assigned follow-up:** Ayan: Work together with Joe on short agendas before internal meetings, continue tracking assignments and progress, and keep the one-hour weekly block available for discussion and future project work.
+- **2026-09-11 — Assigned follow-up:** Ayan: Work together with me on short agendas before internal meetings, continue tracking assignments and progress, and keep the one-hour weekly block available for discussion and future project work.
 
 - **2026-09-11 — Assigned follow-up:** My follow-up: Work together with Ayan on short agendas before internal meetings, continue the minutes, attendance and stakeholder coordination; prepare agendas for meetings with Don; and send the thank-you reply with everyone included in the email thread.
 
