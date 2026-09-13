@@ -57,6 +57,35 @@ I attended our internal team meeting virtually on Google Meet with all four team
 - **2026-09-11:** We agreed to keep the one-hour weekly meeting block and hold most future meetings in person around the South Quad because many of us have class before and after, and in person meetings is better than finding a spot to take a call on the quad. The time can support both coordination and prototype work as the project develops.
 - **2026-09-11:** I decided to include the whole team in future replies to Don so everyone could receive the correspondence directly.
 
+## 2026-09-09: Reflection on the Guest Lecture on Engineering Standards
+
+On Wednesday, Dr. Snehesh Shrestha from NIST gave a guest lecture on engineering standards: what they are, why they matter, who makes them, and why engineering students should care.
+
+### My Thoughts
+
+It's easy to nod along to "standards matter," and honestly I expected that to be the whole talk and not to take much out of it. What made it land was how example-driven it was. Milk sold at exactly skim, 1%, 2%, and whole; a light bulb being "A-series with an E26 base" instead of something you carry to the store to compare; refrigerators built to countertop depth. I had never really thought about any of it, which was his point. The Nepal milk story was the best version: "why is the milk watery today" is not a conversation anyone has here, because a standard made it unnecessary.
+
+The framing I'll keep is that a standard is a shared agreement on how things are designed, built, tested, measured, and communicated, and that it is not a law. NIST writes them but can't enforce them; but the FDA or the EU can.,, His four buckets (design, safety, performance/test, data/communication) gave me vocabulary I didn't have, and "an engineer who follows standards blindly can still cause harm" was a good reminder that a standard is a floor, not a substitute for judgment.
+
+Some honest feedback though is that the presentation was mostly everyday examples, and the part I actually needed as someone about to write a specs document, who writes standards and how you figure out which ones apply to your project, got squeezed into the last minute. Dr. Block asked exactly that at the end and the answer was "I'll send a list." We could've shifted time from the currency, sheet-music, and rope-knot stuff to that, and I think I would've taken even more away.
+
+### What I Enjoyed and Didn't Enjoy as Much
+
+I enjoyed the USB-C / Apple / EU case the most. It packed the whole argument into one story a lot of us could probably relate to: standards aren't law (no standards body could make Apple drop its proprietary connector), but a third party can enforce one (the EU's 2022 directive), and the "standards kill innovation" myth doesn't hold, since Apple helped shape USB-C and now both Apple and its customers are better off. His list of what we no longer think about (size, shape, orientation, polarity, voltage) is a good summary of what a standard buys you. And everyone has the bag of dead cables.
+
+What I didn't enjoy was mostly the ending. The Mars Climate Orbiter, a $327.6 million NASA mission lost because two teams used different unit systems, was arguably the most important engineering failure in the talk and got about thirty seconds; the "who creates standards" and "why you should care" slides went by too fast. 
+
+### What It Made Me Think About
+
+Our projects! Since part of Wednesday's class was about turning user needs (words) into technical specs (numbers). Dr. Fu discussed how engineering standards are a place to find those numbers, and his "performance and test standards" bucket is the same idea.
+
+- **"Weatherproof" is a word, not a spec LOL.** We've written it in our notes since the storm during the interview with Don. The technical-spec version is an ingress-protection rating (IEC 60529; I need to check whether rain and snow calls for IP65 or IP67 rather than guess) plus an operating temperature range that covers a Cleveland winter. My guess is the rechargeable battery, not the ESP32, is the limiting part, which I want to verify before Monday. This nuanced perspective is something I will really benefit from in the project.
+- **Units.** The Mars Climate Orbiter story hit differently since Don works at NASA Glenn. Practically: Don gave us everything in feet and inches (about five feet up, a feeding lip a little over an inch), the breadboard is 0.1-inch pitch, and any enclosure or CAD work will be in millimeters. Four people writing one specs document have to pick pick units once and note what Don's estimates were converted from!
+- **Our "internal clock" is LITERALLY his NTP example.** One of our two options for the nighttime closure is an internal clock. The ESP32 doesn't keep time through a power loss on its own, so that really means syncing over Don's Wi-Fi with NTP, the exact mechanism he described down to measuring the round-trip delay. I had been treating clock vs. light sensor as either/or; they might actually be complementary.
+- **We need our own test metrics.** "The deterrent works" and "birds still feed" have to become numbers: overnight seed loss below some percentage of a fill, false triggers on birds below some rate, response within some seconds of a deer entering the area, battery life that fits Don's refill routine. His point that you can't compare two pose-estimation algorithms until they define keypoints the same way is our problem too: without a shared metric, deterrent vs. nighttime closure is just preferences. And no spec sheet will tell us whether a sound that bothers deer also bothers sparrows; that's on us to test.
+- **Invisible standards as a design goal.** "Standards are working when you don't notice them" is basically what Don told us about the feeder: it's a memorial gift, he doesn't want something clunky bolted onto it, and our first key insight was to maintain its visual integrity. The best version of our project is one Don doesn't notice; the seed just stops disappearing.
+- **Annnnd one small one:** Don wants USB-rechargeable, and the same week our Lab 3 handout warned us to make sure our USB-C cable actually supports data transfer. A connector standard covers the plug, not everything behind it, which was his tolerance point in miniature.
+
 ## 2026-09-11: Internal Team Meeting Minutes
 
 **Time:** 1:00–1:30 PM · **Platform:** Google Meet · **Minutes recorded by:** me (Joe Falkenburg), team secretary
