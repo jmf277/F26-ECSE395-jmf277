@@ -1,3 +1,5 @@
+/*
+jmf277: Keep this unused starter sketch disabled while running the sensor programs.
 #include <Arduino.h>
 
 // put function declarations here:
@@ -16,3 +18,4 @@ void loop() {
 int myFunction(int x, int y) {
   return x + y;
 }
+*/
